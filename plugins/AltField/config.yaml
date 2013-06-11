@@ -1,0 +1,31 @@
+# AltField
+#
+# Release 1.0.0 (2013-6-11)
+#
+# Copyright (c) bit part. / Powered by mt-plug.in
+name: AltField
+id: AltField
+key: altfield
+version: 1.0.0
+author_name: <__trans phrase="bit part">
+author_link: http://www.bit-part.net/
+description: <__trans phrase="Replace HTML of a field.">
+plugin_link: https://github.com/bit-part/mt-plugin-AltField
+doc_link: https://github.com/bit-part/mt-plugin-AltField
+l10n_class: AltField::L10N
+blog_config_template: blog_config.tmpl
+settings:
+    alt_html_title:
+        scope: blog
+        default:
+    alt_html_excerpt:
+        scope: blog
+        default:
+    alt_html_keywords:
+        scope: blog
+        default:
+    alt_html_tags:
+        scope: blog
+        default:
+callbacks:
+    MT::App::CMS::template_param.edit_entry: $altfield::AltField::CMS::_edit_entry_parem

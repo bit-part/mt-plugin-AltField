@@ -1,0 +1,47 @@
+<mt:SetVarBlock name="altfield_about1">
+<div id="hoge-field" class="field">
+    <div class="field-header">
+      <label id="hoge-label" for="hoge">HOGE</label>
+    </div>
+    <div class="field-content ">
+        </mt:SetVarBlock>
+<mt:SetVarBlock name="altfield_about2">
+    </div>
+</div>
+</mt:SetVarBlock>
+
+<mtapp:setting
+    id="altfield_about"
+    label="<__trans phrase="Usage">">
+    <pre><mt:Var name="altfield_about1" escape="html" /><__trans phrase="Include the setting value here."><mt:Var name="altfield_about2" escape="html" /></pre>
+</mtapp:setting>
+
+
+<mtapp:setting
+    id="alt_html_title"
+    label="<__trans phrase="title"> <__trans phrase="alt_html">"
+    hint="alt_html_title"
+    show_hint="0">
+    <textarea name="alt_html_title" id="alt_html_title" class="text high" mt:watch-change="1"><mt:var name="alt_html_title"></textarea>
+</mtapp:setting>
+<mtapp:setting
+    id="alt_html_excerpt"
+    label="<__trans phrase="excerpt"> <__trans phrase="alt_html">"
+    hint="alt_html_excerpt"
+    show_hint="0">
+    <textarea name="alt_html_excerpt" id="alt_html_excerpt" class="text high" mt:watch-change="1"><mt:var name="alt_html_excerpt"></textarea>
+</mtapp:setting>
+<mtapp:setting
+    id="alt_html_keywords"
+    label="<__trans phrase="keywords"> <__trans phrase="alt_html">"
+    hint="alt_html_keywords"
+    show_hint="0">
+    <textarea name="alt_html_keywords" id="alt_html_keywords" class="text high" mt:watch-change="1"><mt:var name="alt_html_keywords"></textarea>
+</mtapp:setting>
+<mtapp:setting
+    id="alt_html_tags"
+    label="<__trans phrase="tags"> <__trans phrase="alt_html">"
+    hint="alt_html_tags"
+    show_hint="0">
+    <textarea name="alt_html_tags" id="alt_html_tags" class="text high" mt:watch-change="1"><mt:var name="alt_html_tags"></textarea>
+</mtapp:setting>
